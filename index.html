@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bouncing Square</title>
   <style>
     * {
@@ -17,13 +18,17 @@
     div {
       display: grid;
       justify-content: center;
+      max-height: calc(100vh - 116px);
+      height: 100vh;
+      align-items: center;
     }
 
     span {
-      height: calc(50vh - 47px);
+      height: auto;
     }
 
     button {
+      display: block;
       background: inherit;
       border: solid;
       border-radius: 25px;
@@ -32,7 +37,9 @@
       font: 1em verdana;
       margin: 3px;
       padding: 8px 13px;
+      width: 150px;
     }
+
     button:active {
       color: red;
       border: solid red;
@@ -98,10 +105,10 @@
 <body>
   <canvas id="canvas"></canvas>
   <div>
-    <span></span>
-    <button id="speedup">Speed Up</button>
-    <button id="reset">Reset</button>
-    <span></span>
+    <span>
+      <button id="speedup">Speed Up</button>
+      <button id="reset">Reset</button>
+    </span>
   </div>
 </body>
 
