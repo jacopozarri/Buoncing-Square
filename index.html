@@ -15,25 +15,22 @@
       z-index: -1;
     }
 
-    div {
-      display: grid;
-      justify-content: center;
-      max-height: calc(100vh - 116px);
-      height: 100vh;
+    #container {
       align-items: center;
-    }
-
-    span {
-      height: auto;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      width: 100vw;
+      
     }
 
     button {
-      display: block;
       background: inherit;
       border: solid;
       border-radius: 25px;
       color: black;
       cursor: pointer;
+      display: block;
       font: 1em verdana;
       margin: 3px;
       padding: 8px 13px;
@@ -99,11 +96,11 @@
 
 <body>
   <canvas id="canvas"></canvas>
-  <div>
-    <span>
-      <button id="speedup">Speed Up</button>
+  <div id="container">
+    <div>
+      <button id="speedup">Speed up</button>
       <button id="reset">Reset</button>
-    </span>
+    </div>
   </div>
 </body>
 
