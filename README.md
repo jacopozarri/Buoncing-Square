@@ -1,6 +1,3 @@
-# Buoncing-Square
-JavaScript Canvas Animation
-
 A simple JavaScript animation of a suqare that bounce on the screen borders changing color.
 
 The Speed Up Button will increase the movement speed of the square it's clickable multiple times.
